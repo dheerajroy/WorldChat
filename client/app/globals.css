@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	outline: none;
+	border: none;
+	-webkit-tap-highlight-color: none;
+}
+
+body {
+	@apply w-full h-screen m-0 p-0 bg-gray-900;
+}
+
+input {
+	@apply text-xl p-3 rounded-full;
+}
+
+input[type="submit"] {
+	@apply bg-red-500 text-white font-bold cursor-pointer;
+}
+
+::-webkit-scrollbar {
+	@apply w-1;
+}
+
+::-webkit-scrollbar-track {
+	@apply bg-white;
+}
+
+::-webkit-scrollbar-thumb {
+	@apply bg-red-500;
+}
