@@ -6,7 +6,7 @@ import Chat from "./pages/Chat"
 import NavBar from "./components/NavBar"
 
 export default function Home() {
-	const API_URL = "ws://127.0.0.1:8000/chat/" // Change this URL if the API is hosted separately
+	const API_URL = "ws://worldchat-1107.onrender.com/chat/" // Change this URL if the API is hosted separately
 	const socket = new WebSocket(API_URL)
 	const [name, setName] = useState()
 
